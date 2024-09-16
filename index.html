@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docker Proxy</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/docs/img/favicon.ico">
+    <meta name="description" content="自建Docker镜像加速服务">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.cbb55f5f.css" as="style"><link rel="preload" href="/docs/assets/js/app.37458384.js" as="script"><link rel="preload" href="/docs/assets/js/2.6bef8de2.js" as="script"><link rel="preload" href="/docs/assets/js/1.0b991997.js" as="script"><link rel="preload" href="/docs/assets/js/22.35d3679d.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.f83ce346.js"><link rel="prefetch" href="/docs/assets/js/11.7fc77a67.js"><link rel="prefetch" href="/docs/assets/js/12.a9575367.js"><link rel="prefetch" href="/docs/assets/js/13.fa701c04.js"><link rel="prefetch" href="/docs/assets/js/14.ed1ac61a.js"><link rel="prefetch" href="/docs/assets/js/15.e619fe39.js"><link rel="prefetch" href="/docs/assets/js/16.4cb39eda.js"><link rel="prefetch" href="/docs/assets/js/17.b20363c1.js"><link rel="prefetch" href="/docs/assets/js/18.b7eb8ff9.js"><link rel="prefetch" href="/docs/assets/js/19.243b82f4.js"><link rel="prefetch" href="/docs/assets/js/20.914c528f.js"><link rel="prefetch" href="/docs/assets/js/21.f494545d.js"><link rel="prefetch" href="/docs/assets/js/23.27505d65.js"><link rel="prefetch" href="/docs/assets/js/24.0b5ffd20.js"><link rel="prefetch" href="/docs/assets/js/3.ca8b9487.js"><link rel="prefetch" href="/docs/assets/js/4.03dd6bf1.js"><link rel="prefetch" href="/docs/assets/js/5.f1b5dcb0.js"><link rel="prefetch" href="/docs/assets/js/6.a00fef8f.js"><link rel="prefetch" href="/docs/assets/js/7.a21ffd1b.js"><link rel="prefetch" href="/docs/assets/js/vendors~docsearch.0720d671.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.cbb55f5f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">Docker Proxy</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  主页
+</a></div><div class="nav-item"><a href="https://dqzboy.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/docs/pages/install.html" class="nav-link">
+  教程
+</a></div><div class="nav-item"><a href="https://dqzboy.github.io/proxyui/zanzhu" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  赞助
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://dqzboy.github.io/proxyui/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CMD UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/dqzboy/Docker-Proxy" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  主页
+</a></div><div class="nav-item"><a href="https://dqzboy.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  博客
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="/docs/pages/install.html" class="nav-link">
+  教程
+</a></div><div class="nav-item"><a href="https://dqzboy.github.io/proxyui/zanzhu" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  赞助
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://dqzboy.github.io/proxyui/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CMD UI
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/dqzboy/Docker-Proxy" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/docs/pages/install.html" class="sidebar-link">安装部署</a></li><li><a href="/docs/pages/isseus.html" class="sidebar-link">问题总结</a></li></ul> </aside> <main aria-labelledby="main-title" class="home"><header class="hero"><img src="/docs/img/logo.png" alt="hero"> <h1 id="main-title">
+      Docker Proxy
+    </h1> <p class="description">
+      自建Docker镜像加速服务
+    </p> <p class="action"><a href="/docs/pages/install.html" class="nav-link action-button">
+  快速上手 →
+</a></p></header> <div class="features"><div class="feature"><h2>简单</h2> <p>非常适合初学者快速在个人服务器上部署使用。</p></div><div class="feature"><h2>轻量</h2> <p>对服务器资源要求极低，轻松运行，无需过多配置。</p></div><div class="feature"><h2>强大</h2> <p>基于官方Registry，不仅支持 Docker Registry，还兼容其他多种镜像仓库。</p></div></div> <div class="theme-default-content custom content__default"></div> <div class="footer">
+    Copyright © 2024 Ding.QinZheng
+  </div></main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.37458384.js" defer></script><script src="/docs/assets/js/2.6bef8de2.js" defer></script><script src="/docs/assets/js/1.0b991997.js" defer></script><script src="/docs/assets/js/22.35d3679d.js" defer></script>
+  </body>
+</html>
