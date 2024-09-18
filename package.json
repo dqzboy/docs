@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "vuepress": "^1.9.10"
+  },
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:dev": "vuepress dev docs"
+  },
+  "name": "docs-dockerproxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dqzboy/docs-dockerproxy.git",
+  "author": "dqzboy <coolboydqz@gmail.com>",
+  "license": "MIT"
+}

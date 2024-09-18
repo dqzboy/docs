@@ -1,2 +1,2 @@
-# docs-dockerproxy
-Docker Proxy 安装文档教程
+# docs
+Docker Proxy项目文档
